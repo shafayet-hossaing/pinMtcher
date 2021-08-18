@@ -41,13 +41,13 @@ function verifyPin(){
     const displayCalcNumber = document.getElementById("displayCalcNumber").value
 
 
-    const failedMassage = document.getElementById("matched")
-    const success =  document.getElementById("notMatched")
+    const failedMassage = document.getElementById("notMatched")
+    const success =  document.getElementById("matched")
     if(pinDisplay === displayCalcNumber){
-        failedMassage.style.display = "block"
-        success.style.display = "none"
+        success.style.display = "block"
+        failedMassage.style.display = "none"
     }else{
-        failedMassage.style.display = "block"
         success.style.display = "none"
+        failedMassage.style.display = "block"
     }
 }
